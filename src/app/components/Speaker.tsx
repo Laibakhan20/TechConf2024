@@ -4,9 +4,9 @@ import Image from 'next/image';
 function Speaker ()  {
   
     const speakers = [
-        { name: 'Melanie Perkins', title: 'CEO of Canva',  image: "/ceo2.jpg" },
-        { name: 'Demis Hassabis', title: 'AI Specialist', image: "/specialistai.jpg" },
-        { name: 'Andreas Antonopoulos', title: 'Blockchain Expert', image: "/blockchainexpert.jpg" },
+        { name: "Melanie Perkin", title: "CEO of Canva",  image: "/ceo2.jpg" },
+        { name: "Demis Hassabis", title: "AI Specialist", image: "/specialistai.jpg" },
+        { name: "Andreas Antonopoulos", title: "Blockchain Expert", image: "/blockchainexpert.jpg" },
       ];
     
       return (
@@ -20,10 +20,13 @@ function Speaker ()  {
           {speakers.map((speaker, index) => (
             <div key={index} className="bg-white text-gray-950 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105">
               {/* Speaker Image */}
-              <img
+              <Image
                 src={speaker.image}
                 alt={speaker.name}
                 className="w-full h-56 object-cover"
+                width={200}
+                height={56}
+                quality={100}
               />
               
               {/* Speaker Information */}
@@ -39,3 +42,12 @@ function Speaker ()  {
   );
 }
 export default Speaker
+
+
+{/* <Image
+            src={"/05.png"}
+            alt="img1"
+            className="w-full h-full"
+            width={200}
+            height={200}
+          /> */}
