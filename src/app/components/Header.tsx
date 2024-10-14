@@ -28,10 +28,10 @@ const Header = () => {
     {/* Mobile Menu */}
     {isOpen && (
         <div className="md:hidden">
-          <Link href="/About" className="block py-2 px-4 text-sm hover:bg-gray-700">About</Link>
-          <Link href="/Speakers" className="block py-2 px-4 text-sm hover:bg-gray-700">Speakers</Link>
-          <Link href="/Schedule" className="block py-2 px-4 text-sm hover:bg-gray-700">Schedule</Link>
-          <Link href="/Contact" className="block py-2 px-4 text-sm hover:bg-gray-700">Contact</Link>
+          <Link href="#About" className="block py-2 px-4 text-sm hover:bg-gray-700">About</Link>
+          <Link href="#Speakers" className="block py-2 px-4 text-sm hover:bg-gray-700">Speakers</Link>
+          <Link href="#Schedule" className="block py-2 px-4 text-sm hover:bg-gray-700">Schedule</Link>
+          <Link href="#Contact" className="block py-2 px-4 text-sm hover:bg-gray-700">Contact</Link>
         </div>
       )}
   </header>
